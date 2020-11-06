@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #070707;
+    background: #ffffff;
+
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #132C3E;
+    padding: 0;
+}
+
+.brand {
+    position: absolute;
+    top: -40px;
+    left: 5%;
+    width: 20%;
+}
+
+.header-nav{
+    height: 30px;
+    color: #fff;
+}
+
+.middle-nav{
+    background-color: #2A4558;
+    height: 40px;
+    color: #fff;
+}
+
+.menu-top {
+    margin: 0 auto;
+    width: 70%;
+}
+.menu-top ul{
+    display: flex;
+	  margin: 0px 0 0 50%;
+}
+
+.menu-top ul li {
+	list-style: none;
+    margin: 4px 5px 0 1%;
+}
+
+.menu-top ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-top ul li a:hover {
+    color: orange;
+}
+
+
+.menu-middle {
+    margin: 0 auto;
+    width: 70%;
+}
+.menu-middle ul{
+      display: flex;
+}
+
+.menu-middle ul li {
+	list-style: none;
+    margin: 10px 0 0 14%;
+}
+
+.menu-middle ul li a {
+    text-decoration: none;
+    color: white;
+    transition-delay: .1s;
+    cursor: pointer;
+}
+
+.menu-middle ul li a:hover {
+    color: orange;
+}
+
+.date{
+	float: right;
+    padding: 5px 10% 0 0;
+	color: white;
+}
+
+
+#pagewrap {
+	/*padding: 5px;*/
+	/*width: 960px;*/
+	margin: 35px auto;
+  display: table;
+  align-items: center;
+  text-align: center
+}
+
+header {
+	height: 100px;
+	padding: 0 15px;
+  text-align: center;
+  text-size-adjust: 100%;
+}
+#content,
+#middle,
+#sidebar {
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+#content {
+	width: 294px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 294px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+#sidebar {
+	width: 294px;
+	padding: 5px 15px;
+	float: left;
+}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('../images/backg.png');
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 25px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 98%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#navbar #logo {
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
+
+#navbar-left {
+  float: left;
+
+}
+
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+div.site-branding { 
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.site-branding-logo { 
+  display: inline;
+  vertical-align: middle;
+}
+
+div.site-branding-text { /* Position text within site-branding */
+    display: inline;
+    width: 350px;
+    margin: auto 0;
+    vertical-align: middle;
+}
+
+div.site-branding-title { /* Position title within text */
+    display: inline;
+}
+
+div.site-branding-tagline { /* Position tagline within text */
+    display: block;
+}
+
+/* Full-width input fields */
+
+  /* Set a style for all buttons */
+  button {
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 0px;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: auto;
+    border-radius: 20%;
+  }
+  
+  .container {
+    padding: 5px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 200;
+    top: 15px;
+    width: 80%; /* Full width */
+    height: 80%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); 
+    background-color: transparent; /* Black w/ opacity */
+    padding-top: 70px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+  column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  body {
+    font-family: Arial;
+  }
+  
