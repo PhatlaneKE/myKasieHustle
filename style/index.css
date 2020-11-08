@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body{
     line-height: 22px;
     font-family: "Montserrat", sans-serif;
@@ -10,7 +5,9 @@ body{
     font-size: 14px;
     color: #070707;
     background: #ffffff;
-
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-image: url('../images/backg.png');*/
 }
 
 header{
@@ -102,12 +99,6 @@ header{
   text-align: center
 }
 
-header {
-	height: 100px;
-	padding: 0 15px;
-  text-align: center;
-  text-size-adjust: 100%;
-}
 #content,
 #middle,
 #sidebar {
@@ -120,7 +111,7 @@ header {
 }
 
 #middle {
-	width: 294px; /* Account for margins + border values */
+	width: 294px; 
 	float: left;
 	padding: 5px 15px;
 	margin: 0px 5px 5px 5px;
@@ -129,12 +120,6 @@ header {
 	width: 294px;
 	padding: 5px 15px;
 	float: left;
-}
-
-body { 
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url('../images/backg.png');
 }
 
 #navbar {
@@ -209,132 +194,97 @@ div.site-branding-logo {
   vertical-align: middle;
 }
 
-div.site-branding-text { /* Position text within site-branding */
+div.site-branding-text { 
     display: inline;
     width: 350px;
     margin: auto 0;
     vertical-align: middle;
 }
 
-div.site-branding-title { /* Position title within text */
+div.site-branding-title { 
     display: inline;
 }
 
-div.site-branding-tagline { /* Position tagline within text */
+div.site-branding-tagline { 
     display: block;
 }
 
-/* Full-width input fields */
 
-  /* Set a style for all buttons */
-  button {
-    background-color: blue;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
+
+button:hover {
+  opacity: 0.8;
+}
+
+img.avatar {
+  width: auto;
+  border-radius: 20%;
+}
+
+.container {
+  padding: 5px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
   
-  button:hover {
-    opacity: 0.8;
-  }
-  
-  /* Center the image and position the close button */
-  .imgcontainer {
-    text-align: center;
-    margin: 0px;
-    position: relative;
-  }
-  
-  img.avatar {
-    width: auto;
-    border-radius: 20%;
-  }
-  
-  .container {
-    padding: 5px;
-  }
-  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
   span.psw {
-    float: right;
-    padding-top: 16px;
+      display: block;
+      float: none;
   }
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 200;
-    top: 15px;
-    width: 80%; /* Full width */
-    height: 80%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); 
-    background-color: transparent; /* Black w/ opacity */
-    padding-top: 70px;
+  .cancelbtn {
+      width: 100%;
   }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 60%; /* Could be more or less, depending on screen size */
-  }
-  /* The Close Button (x) */
-  .close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-  }
+}
 
-  
-  /* Add Zoom Animation */
-  .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-  }
-  
-  @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
-  }
-    
-  @keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
-  }
-  
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-  }
+column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
 
-  column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-  
-  /* Clearfix (clear floats) */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  body {
-    font-family: Arial;
-  }
-  
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 2%;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
